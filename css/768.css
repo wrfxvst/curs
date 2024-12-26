@@ -1,0 +1,104 @@
+@media (max-width: 768px) {
+
+    .conqueror__line {
+        font-size: 40px;
+    }
+
+    .conqueror__text1 {
+        font-size: 60px;
+    }
+
+    .conqueror__text2 {
+        font-size: 30px;
+    }
+
+    .info {
+        height: 60vh;
+        gap: 5px;
+    }
+
+    .info__headline-line-text {
+        font-size: 25px;
+    }
+
+    .info__headline-text1 {
+        font-size: 50px;
+    }
+
+    .info__headline-text2 {
+        font-size: 25px;
+    }
+
+    .info__first, .info__second {
+        font-size: 15px;
+    }
+
+    .services {
+        margin-top: 10vh;
+        min-height: 100vh;
+    }
+
+    .services__headline {
+        padding: 5px;
+    }
+
+    .services__headline-line-text {
+        font-size: 30px;
+    }
+
+    .services__headline-text1 {
+        font-size: 60px;
+    }
+
+    .arctic__line-headline {
+        font-size: 30px;
+    }
+
+    .arctic__text1 {
+        font-size: 60px;
+    }
+
+    .grille {
+        min-height: 40vh;
+    }
+
+    .grille__line-headline {
+        font-size: 30px;
+    }
+
+    .grille__text1 {
+        font-size: 40px;
+    }
+
+    .view {
+        margin-top: 5vh;
+    }
+
+    .view__text-line-headline {
+        font-size: 25px;
+    }
+
+    .view__text-text1 {
+        font-size: 40px;
+    }
+
+    .left-block__headline {
+        font-size: 35px;
+    }
+
+    .right-block__headline {
+        font-size: 30px;
+    }
+
+    .form-follow input {
+        height: 3vh;
+    }
+
+    .form-follow textarea {
+        height: 8vh;
+    }
+
+    .form-follow button {
+        width: 60%;
+    }
+}

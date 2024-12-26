@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body, html {
+    padding: 0;
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+  
+header {
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+    padding: 20px 0;
+}
+
+main {
+    position: relative;
+    height: 100%;
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 500;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 400;
+}
+
+li {
+    list-style-type: none;
+}
+
+hr {
+    height: 10px;
+    margin: 0;
+    background-color: #fff;
+    border: none;
+}
+
+.back-button {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    left: 92%;
+    top: 50vh;
+    border-radius: 50%;
+    z-index: 1;
+
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: 1s ease;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-button:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.hidden {
+    animation: opacity-invert 1s linear 1;
+    opacity: 0;
+}
+
+.visible {
+    display: block !important;
+    animation: opacity 1s linear 1;
+}
+
+.back-button__img {
+    width: 70px;
+    height: 70px;
+    filter: opacity(0.5);
+    transition: 1s ease;
+}
+
+.back-button:hover .back-button__img {
+    filter: opacity(0.8);
+}
+
+.menu__logo {
+    width: 100px;
+    height: 75px;
+    filter: invert(1);
+}
+
+.menu__logo-link {
+    width: 15%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    width: 40%;
+}
+
+.navigation__item {
+    font-size: 20px;
+    margin: 0 20px;
+}
+
+.navigation__item-link {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+.navigation__item-link:hover {
+    color: rgb(242, 255, 124);
+}
+
+.navigation__item-name {
+    transition: 0.3s ease;
+}
+
+.navigation__item-link:hover .navigation__item-name {
+    text-shadow: 0 0 20px rgba(242, 255, 124, 0.304);
+}
+
+.product {
+    background-color: rgba(141, 141, 141, 0.3);
+    border-radius: 10px;
+    transition: 0.5s linear;
+}
+
+.product p {
+    margin: 12px;
+    transition: 0.5s linear;
+}
+
+.product:hover p {
+    color: #000;
+}
+
+.product:hover {
+    background-color: rgb(255, 255, 80);
+}
+
+.products {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    transition: 2s ease;
+}
+
+.products:hover {
+    transform: scale(1.03);
+}
+
+.products__headline {
+    font-size: 40px;
+    transition: 2s ease;
+    width: 100%;
+    height: 10%;
+    text-align: center;
+}
+
+.products__headline:hover {
+    transform: scale(1.03);
+}
+
+.products-ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.products-ul__item {
+    width: 25%;
+    height: 150%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    transition: 2s ease;
+}
+
+.products-ul__item:hover {
+    width: 70%;
+    height: 150%;
+}
+
+#corolla:hover {
+    background: linear-gradient(to right, black, transparent, black), url(../img/corolla.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#camry:hover {
+    background: linear-gradient(to right, black, transparent, black), url(../img/camry.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#juke:hover {
+    background: linear-gradient(to right, black, transparent, black), url(../img/juke.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.products-ul__item:hover .products-ul__text {
+    color: #fff;
+    background: transparent;
+    width: 40%;
+}
+
+.products-ul__item:hover .products-ul__headline {
+    transform: scale(1.2);
+}
+
+.products-ul__headline {
+    font-size: 35px;
+    transition: 2s ease;
+}
+
+.products-ul__text {
+    display: inline-block;
+    background: linear-gradient(to bottom, rgb(255, 255, 255) 0%, rgba(0, 0, 0, 0) 80%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: 4s ease-in;
+    font-size: 20px;
+}
+
+.products-ul__button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 19px;
+    background-color: rgba(141, 141, 141, 0.3);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    filter: opacity(0);
+    transition: 4s ease;
+}
+
+.products-ul__item:hover .products-ul__button {
+    filter: opacity(1);
+    height: 50px;
+}
+
+.products-ul__button:hover {
+    background-color: rgb(255, 255, 80);
+    color: #000;
+}
+
+

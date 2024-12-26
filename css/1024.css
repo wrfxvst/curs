@@ -1,0 +1,95 @@
+@media (max-width: 1024px) {
+    .back-button {
+        width: 50px;
+        height: 50px;
+    }
+
+    .back-button__img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .navigation {
+        width: 70%;
+    }
+
+    .navigation__item {
+        margin: 0 10px;
+    }
+
+    .info {
+        height: 70vh;
+        margin-bottom: 0;
+    }
+
+    .services {
+        min-height: 90vh;
+        margin-bottom: 5vh;
+        margin-top: 0vh;
+        grid-template-rows: 1fr 4fr;
+    }
+
+    .advantages {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .arctic__info {
+        width: 80%;
+        margin-left: 80px;
+        margin-bottom: 80px;
+    }
+
+    .view {
+        margin-top: 5vh;
+        min-height: 55vh;
+    }
+
+    .view__text {
+        width: 100%;
+        text-align: left;
+    }
+
+    .view__text-line-headline {
+        margin-left: 70px;
+    }
+
+    .view__text-text1 {
+        margin-left: 70px;
+    }
+
+    .view__photos {
+        flex-direction: column;
+    }
+
+    .view__photos-img {
+        width: 70%;
+    }
+
+    .photos {
+        height: 100vh;
+        margin-top: 10vh;
+    }
+
+    .left-block__headline {
+        font-size: 50px;
+    }
+
+    .contacts {
+        margin-top: 50px;
+    }
+
+    .contacts__item {
+        font-weight: 400;
+        margin-top: 10px;
+    }
+
+    .social {
+        margin-top: 50px;
+    }
+
+    footer {
+        min-height: 60vh;
+    }
+}

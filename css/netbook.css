@@ -1,0 +1,25 @@
+@media (max-width: 1368px) {
+    .navigation {
+        width: 60%;
+    }
+
+    .info__headline-text1 {
+        font-size: 60px;
+    }
+
+    .arctic__info {
+        width: 70%;
+        margin-left: 100px;
+        margin-bottom: 100px;
+    }
+
+    .grille__info {
+        width: 60%;
+        margin-top: 75px;
+        margin-right: 100px;
+    }
+
+    .view {
+        margin-top: 10vh;
+    }
+}

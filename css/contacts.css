@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body, html {
+    padding: 0;
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+  
+header {
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+    padding: 20px 0;
+}
+
+main {
+    position: relative;
+    margin-top: -115px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 400;
+}
+
+li {
+    list-style-type: none;
+}
+
+hr {
+    height: 10px;
+    margin: 0;
+    background-color: #fff;
+    border: none;
+}
+
+.back-button {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    left: 92%;
+    top: 50vh;
+    border-radius: 50%;
+    z-index: 1;
+
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: 1s ease;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-button:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.hidden {
+    animation: opacity-invert 1s linear 1;
+    opacity: 0;
+}
+
+.visible {
+    display: block !important;
+    animation: opacity 1s linear 1;
+}
+
+.back-button__img {
+    width: 70px;
+    height: 70px;
+    filter: opacity(0.5);
+    transition: 1s ease;
+}
+
+.back-button:hover .back-button__img {
+    filter: opacity(0.8);
+}
+
+.menu__logo {
+    width: 100px;
+    height: 75px;
+    filter: invert(1);
+}
+
+.menu__logo-link {
+    width: 15%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    width: 40%;
+}
+
+.navigation__item {
+    font-size: 20px;
+    margin: 0 20px;
+}
+
+.navigation__item-link {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+.navigation__item-link:hover {
+    color: rgb(242, 255, 124);
+}
+
+.navigation__item-name {
+    transition: 0.3s ease;
+}
+
+.navigation__item-link:hover .navigation__item-name {
+    text-shadow: 0 0 20px rgba(242, 255, 124, 0.304);
+}
+
+.product {
+    background-color: rgba(255, 255, 159, 0.3);
+    border-radius: 10px;
+    transition: 0.5s linear;
+}
+
+.product p {
+    margin: 12px;
+    transition: 0.5s linear;
+}
+
+.product:hover p {
+    color: #000;
+}
+
+.product:hover {
+    background-color: rgb(255, 255, 80);
+}
+
+footer {
+    background-image: url(../img/footer-photo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 800;
+    color: #fff;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+        
+    animation: opacity 1s linear 1;
+    transition: transform 3s ease;
+    transform-origin: center center;
+}
+
+.left-block {
+    padding: 50px;
+    margin-top: 20vh;
+}
+
+.left-block__headline {
+    font-size: 60px;
+    color: rgb(255, 255, 159);
+    margin-top: 10px;
+}
+
+.contacts {
+    padding-left: 0;
+    margin-top: 100px;
+}
+
+.contacts__item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: left;
+    font-weight: 300;
+
+    margin-top: 20px;
+}
+
+.contacts__item-img {
+    width: 7%;
+    height: 7%;
+    filter: invert(1);
+}
+
+.contacts__item-phone, .contacts__item-address {
+    margin-left: 20px;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.social__link {
+    filter: opacity(0.7);
+    transition: 0.6s ease;
+}
+
+.social__link:hover {
+    filter: opacity(1);
+}
+
+.social__img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    filter: invert(1);
+}
+
+.inst {
+    width: 32px;
+    height: 32px;
+}
+
+.x {
+    width: 45px;
+    height: 45px;
+}
+
+.right-block {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 50px;
+    margin-top: 20vh;
+}
+
+.right-block__headline {
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+.form-follow {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.form-follow input {
+    border: 10px solid transparent;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    height: 5vh;
+    font-family: 'Montserrat', 'sans-serif';
+    font-size: 17px;
+
+    transition: 0.5s ease;
+}
+
+.form-follow input:focus, .form-follow textarea:focus {
+    background-color: rgb(255, 255, 208);
+}
+
+.form-follow textarea {
+    border-radius: 5px;
+    border: 10px solid transparent;
+    height: 10vh;
+    font-family: 'Montserrat', 'sans-serif';
+    font-size: 17px;
+
+    transition: 0.5s ease;
+}
+
+.form-follow button {
+    border: none;
+    border-radius: 5px;
+    height: 5vh;
+    width: 40%;
+    margin-top: 20px;
+    background-color: rgb(255, 255, 159);
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+
+    transition: 1s ease;
+}
+
+.form-follow button:hover {
+    background-color: rgb(255, 255, 80);
+    cursor: pointer;
+}
+
+.form-follow input:hover, .form-follow textarea:hover {
+    box-shadow: 0px 0px 5px #fff;
+}
+
+.form-follow input:focus, .form-follow textarea:focus, .form-follow button:focus {
+    outline: none;
+}
+
+@media(max-width: 1024px) {
+    .left-block__headline {
+        font-size: 50px;
+    }
+
+    .contacts {
+        margin-top: 50px;
+    }
+
+    .contacts__item {
+        font-weight: 400;
+        margin-top: 10px;
+    }
+
+    .social {
+        margin-top: 50px;
+    }
+
+    .left-block__headline {
+        font-size: 35px;
+    }
+
+    .right-block__headline {
+        font-size: 30px;
+    }
+
+    .form-follow input {
+        height: 3vh;
+    }
+
+    .form-follow textarea {
+        height: 8vh;
+    }
+
+    .form-follow button {
+        width: 60%;
+    }
+}
